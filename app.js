@@ -14,10 +14,12 @@ $(() => {
       (data) => {
 
         $('#pokemon_species').html(".$pokemon_species.(data)")
-        console.log(data.pokemon_species);
+        console.log(data.pokemon_species.array);
 
         $('#types').html(".$types.(data)")
         console.log(data.types);
+      }
+    )
       })
   })
 })
