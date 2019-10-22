@@ -3,6 +3,7 @@ body {
 }
 header {
   text-align: center;
+  width: auto;
 }
 h1 {
 text-align: center;
@@ -19,11 +20,18 @@ text-align: justify;
 dd {
 text-align: justify;
 }
-ul {
+.modal {
+position: fixed;
+overflow: auto;
+height: 100%;
+width: 100%;
+}
 
+ul {
+text-align: justify;
 }
 li {
-
+text-align: left;
 }
 div{
 width: 30%;
