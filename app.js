@@ -2,26 +2,27 @@ console.log("The link cables are connected");
 
 $(() => {
       // https://www.youtube.com/watch?v=8MzrRffXMkQ&t=2919s
-    $('form').on('submit', (event) => {
+  $('form').on('submit', (event) => {
 
-        event.preventDefault()
+  event.preventDefault()
 
-        const userInput = $('input[type = "text"]').val()
+  const userInput = $('input[type = "text"]').val()
 
-    $.ajax({
+  $.ajax({
       url: "https://pokeapi.co/api/v2/generation/1",
-    }).then(
+  }).then(
       (data) => {
 
-        $('#pokemon_species').html(".$pokemon_species.(data)")
-        console.log(data.pokemon_species);
+      $('#pokemon_species').html(".$pokemon_species.(data)")
+      console.log(data.pokemon_species);
 
-        $('#types').html(".$types.(data)")
-        console.log(data.types);
-      }
-    )
-      })
+      $('#types').html(".$types.(data)")
+      console.log(data.types);
+    }
+  )
+    })
 $(() => {
+
 const $openButton = $('#openModal')
 const $modal = $('#modal')
 const $closeButton = $('#close')
@@ -35,8 +36,6 @@ const closeModal = () => {
 $openButton.on('click', openModal)
 $closeButton.on('click', closeModal)
 })
-  })
-
 
 // https://pokeapi.co/api/v2/pokemon/bulbasaur
 // https://pokeapi.co/api/v2/pokemon/charmander

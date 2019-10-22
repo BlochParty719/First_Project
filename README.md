@@ -1,1 +1,1 @@
-For this project, my idea was to create a site 
+For this project, my idea was to create a site that would provide data on the Kanto region of the Pokémon franchise. The beginning of the game was a huge inspiration for how I set up the modal because you, the player got to choose Bulbasaur, Charmander, or Squirtle as your starter. They were each in a pokéball on a table and when you walked up to one, a prompt opened up that gave general information as well as asking if you were going to select this Pokémon.
