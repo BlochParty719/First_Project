@@ -25,10 +25,8 @@ ul {
 li {
 
 }
-div {
+div{
 width: 30%;
-display: flex;
-float: left;
 }
 footer {
 text-align: center;
