@@ -11,15 +11,16 @@ $(() => {
   $.ajax({
       url: "https://pokeapi.co/api/v2/generation/1",
   }).then(
-      (data) => {
+    (data) => {
+    for (i = 150; i <array.length; i++) {
+    $('#pokemon_species').html(".$pokemon_species.(data)")
+    console.log(data.pokemon_species);
 
-      $('#pokemon_species').html(".$pokemon_species.(data)")
-      console.log(data.pokemon_species);
-
-      $('#types').html(".$types.(data)")
-      console.log(data.types);
+    $('#types').html(".$types.(data)")
+    console.log(data.types.array([i]));
     }
-  )
+  }
+)
     })
 $(() => {
 
@@ -40,3 +41,4 @@ $closeButton.on('click', closeModal)
 // https://pokeapi.co/api/v2/pokemon/bulbasaur
 // https://pokeapi.co/api/v2/pokemon/charmander
 // https://pokeapi.co/api/v2/pokemon/squirtle
+})
