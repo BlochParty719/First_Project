@@ -2,7 +2,7 @@ body {
 
 }
 #modal {
-/*display: none; */
+z-index: 1;
 position: fixed;
 overflow: auto;
 height: 100%;
@@ -11,6 +11,8 @@ width: 100%;
 #modal-textbox {
   height: 200px;
   width: auto;
+  background-color: white;
+  margin: 150px;
 }
 div{
 display: inline-block;
